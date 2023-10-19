@@ -23,6 +23,7 @@ This TLS Client allows you to specify the Client (Browser and Version) you want 
 
 The Interface of the HTTP Client looks like the following and extends the base net/http Client Interface by some useful functions.
 Most likely you will use the `Do()` function like you did before with net/http Client.
+
 ```go
 type HttpClient interface {
     GetCookies(u *url.URL) []*http.Cookie
@@ -41,7 +42,6 @@ type HttpClient interface {
 }
 ```
 
-
 ### Quick Usage Example
 
 ```go
@@ -53,7 +53,7 @@ import (
 	"log"
 
 	http "github.com/bogdanfinn/fhttp"
-	tls_client "github.com/bogdanfinn/tls-client"
+	tls_client "github.com/glowww/tls-client"
 )
 
 func main() {

@@ -1,11 +1,12 @@
 package tests
 
 import (
-	http "github.com/bogdanfinn/fhttp"
-	tls_client "github.com/bogdanfinn/tls-client"
-	"github.com/stretchr/testify/assert"
 	"strings"
 	"testing"
+
+	http "github.com/bogdanfinn/fhttp"
+	tls_client "github.com/glowww/tls-client"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestWeb(t *testing.T) {
